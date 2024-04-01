@@ -1,0 +1,38 @@
+GET https://localhost:7030/api/peliculas
+
+###
+
+GET https://localhost:7030/api/peliculas?s=Dun
+
+###
+GET https://localhost:7030/api/peliculas/2
+
+###
+
+POST https://localhost:5144/api/peliculas
+Content-Type: application/json
+{
+    "titulo": "Kung fu panda 4",
+    "sinopsis": "Un panda que sabe karate y se llama po y quería ser guerrero dragon",
+    "anio": 2024,
+    "poster": "Sin poster",
+    "categorias": [2, 3]
+}
+
+### 
+
+PUT https://localhost:7030/api/peliculas/16
+Content-Type: application/json
+
+{
+    "peliculaid": 16,
+    "titulo": "Paw Patrol: La Súper Película",
+    "sinopsis": "Un meteorito mágico aterriza en Adventure City y otorga superpoderes a los cachorros de PAW Patrol, convirtiéndolos en The Mighty Pups.",
+    "anio": 2024,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg",
+    "categorias": [1, 2, 3]
+}
+
+###
+
+DELETE https://localhost:7030/api/peliculas/16
